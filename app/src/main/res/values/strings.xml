@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IT Тест</string>
+    <string name="SignIn">ВОЙТИ</string>
+    <string name="Registration">ЗАРЕГЕСТРИРОВАТЬСЯ</string>
+    <string name="polytechlogo">PolyTechLogo</string>
+    <string name="anonymously">Вход анонимно</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="name">Имя</string>
+    <string name="phone">Телефон</string>
+</resources>

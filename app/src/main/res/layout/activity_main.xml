@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/registrationActivity"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/polytechlogo"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/btnsignup"
+            style="@style/RegButtons"
+            android:layout_width="match_parent"
+            android:text="@string/SignIn"
+            android:onClick="signUp"/>
+
+        <Button
+            android:id="@+id/btnregistration"
+            style="@style/RegButtons"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="@string/Registration"
+            android:onClick="registration"/>
+
+        <Button
+            android:id="@+id/btnwithoutreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="@string/anonymously"
+            android:background="@android:color/transparent"
+            android:textSize="12sp"
+            android:onClick="LoginAnonymously"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
