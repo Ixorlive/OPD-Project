@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     int emailIndex = c.getColumnIndex("email");
                     int passwordIndex = c.getColumnIndex("password");
                     int nameIndex = c.getColumnIndex("name");
-                    boolean check = false;
+                    boolean check = true;
                     do {
                         if (c.getString(emailIndex).equals(emailStr) &&
                                 c.getString(passwordIndex).equals(passwordStr)){
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                             intent.putExtra(EXTRA_MESSAGE, c.getString(nameIndex));
                             root.getContext().startActivity(intent);
                             finish();
-                            check = true;
+                            check = false; //не знаю зачем..
                             break;
                         }
                     }while (c.moveToNext());
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        regDialog.setPositiveButton("Зарегестрироваться", new DialogInterface.OnClickListener() {
+        regDialog.setPositiveButton("Зарегистрироваться", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 String nameStr = "", emailStr ="", passwordStr = "";

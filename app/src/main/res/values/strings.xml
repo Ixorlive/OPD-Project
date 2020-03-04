@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">IT Тест</string>
     <string name="SignIn">ВОЙТИ</string>
-    <string name="Registration">ЗАРЕГЕСТРИРОВАТЬСЯ</string>
+    <string name="Registration">ЗАРЕГИСТРИРОВАТЬСЯ</string>
     <string name="polytechlogo">PolyTechLogo</string>
     <string name="anonymously">Вход анонимно</string>
     <string name="email">Email</string>
